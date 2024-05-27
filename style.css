@@ -1,3 +1,4 @@
+/* Global Webpage Settings ------------------------------------------------*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,30 +11,49 @@
  --secondary: #114a8b;
  --background: #d9dcd6;
  --text-color: #ffffff;
+ --dark-text: #000000; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: (var(--dark-text));
+    font-weight: 500;
+    line-height: 1.1;
 }
 
 body {
     background-color: var(--background);
+    font-size: 1.75rem;
 }
+/*---------------------------------------------------------------------------------------------*/
 
+
+/* Header/Nav ------------------------------------------------------------------------------------*/
 header {
-    padding: 20px;
+    padding: 2rem;
     background-color: var(--secondary);
     color: (var(--text-color));
 }
 
-header h1 {
+h1 {
     display: inline-block;
-    font-size: 48px;
-    font-weight: 500;
-    color: #ffffff;
+    font-size: 4rem;
+    color: var(--text-color);
 }
 
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 header nav ul {
@@ -49,7 +69,9 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
+/*-----------------------------------------------------------------------------------------------------------*/
 
+/* Hero --------------------------------------------------------------------------------------------------------*/
 .hero {
     height: 400px;
     width: 100%;
@@ -66,4 +88,131 @@ a {
     margin-right: 20px;
     padding: 20px;
     font-size: 30px;
+} 
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+
+/* About Me Section ------------------------------------------------------------------------------------------------*/
+h2 {
+    color: var(--dark-text);
+    font-size: 3rem;
+    padding-left: 20px;
 }
+
+p {
+    color: black;
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Work Section ---------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .card-column {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+div {
+    display: block;
+}
+
+.work {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-block {
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+
+.project-block ul li {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline;
+}
+
+.project-block pre {
+    margin-left: 0px;
+}
+
+#title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.card-column {
+    flex: 1 0 100%; 
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.image-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    min-height: 100%; 
+    outline: 4px solid var(--secondary); 
+    background-image: url(./assets/bostonskyline.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-card pre {
+    background-color: #114a8b;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 25%;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Footer ------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    padding: 2rem;
+    background-color: var(--secondary);
+    color: (var(--text-color));
+}
+
+footer nav {
+    margin-right: 20px;
+    float: right;
+    font-size: 2rem;
+    align-items: center;
+}
+
+footer h2 {
+    color: var(--text-color)
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding-bottom: 15px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
