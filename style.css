@@ -116,21 +116,22 @@ p {
 
 /* Work Section ---------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
-    .card-column {
+    .project {
         flex: 0 0 40%;
         max-width: 40%;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .card-column {
+    .project {
         flex: 0 0 50%;
         max-width: 50%;
     }
 }
 
-div {
-    display: block;
+.vl {
+    height: 200px;
+    border-left: 5px solid var(--secondary);
 }
 
 .work {
@@ -140,20 +141,17 @@ div {
     align-items: center;
 }
 
-.project-block {
+.project-label {
     margin-top: 20%;
     margin-bottom: 3%;
 }
 
-.project-block ul li {
+.project-label ul li {
     color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 400;
     display: inline;
-}
-
-.project-block pre {
-    margin-left: 0px;
+    padding-left: 10px;
 }
 
 #title {
@@ -161,7 +159,7 @@ div {
     font-weight: 600;
 }
 
-.card-column {
+.project {
     flex: 1 0 100%; 
     padding: 1.5rem;
     margin-bottom: 1.5rem;
@@ -178,7 +176,7 @@ div {
     background-position: center;
 }
 
-.image-card pre {
+.image-card div {
     background-color: #114a8b;
     display: flex;
     align-items: center;
@@ -193,13 +191,15 @@ footer {
     padding: 2rem;
     background-color: var(--secondary);
     color: (var(--text-color));
+    display: flex;
+    justify-content: space-between;
 }
 
 footer nav {
     margin-right: 20px;
     float: right;
     font-size: 2rem;
-    align-items: center;
+    padding-top: 10px;
 }
 
 footer h2 {
