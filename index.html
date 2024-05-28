@@ -34,18 +34,21 @@
         <section class="hero"><span role="img" aria-label="#"></span>
             <p>Web Developer, Greater Boston Area</p>
         </section>
+
         <!--About Me--> 
         <section class="about-me">
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section> 
+
         <!--Work--> 
-        <section class="work">
-            <h2>Work</h2> 
+        <section class="work"> <!--Flex Container-->
+            <h2>Work</h2> <!--Flex Child-->
+            <div class="vl"></div> <!--Flex Child-->
             <!--Surf Report--> 
-            <div class="card-column">
-                <figure class="card image-card">
-                    <pre class="project-block">
+            <div class="project"> <!--Flex Child-->
+                <figure class="image-card"> <!--Flex Container-->
+                    <div class="project-label"> <!--Flex Child-->
                         <ul>
                             <li id="title">
                                 Surf Report
@@ -54,9 +57,10 @@
                                 MERN Stack
                             </li>
                         </ul>
-                    </pre>
+                    </div>
                 </figure>
             </div>
+
             <!--LED Wall--> 
         </section>
     </main>
