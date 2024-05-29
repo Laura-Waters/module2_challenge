@@ -9,7 +9,7 @@
 :root {
  --primary: #a4e1f2;
  --secondary: #114a8b;
- --background: #d9dcd6;
+ --background: #e1f5fa;
  --text-color: #ffffff;
  --dark-text: #000000; 
 }
@@ -47,6 +47,7 @@ h1 {
     display: inline-block;
     font-size: 4rem;
     color: var(--text-color);
+    margin-left: 10px;
 }
 
 header nav {
@@ -81,13 +82,22 @@ a {
     background-position: center;
 }
 
+.subtitle-block {
+    background-color: #114a8b;
+    height: 80px;
+    width: 48%;
+    margin-top: 23%;
+    float: right;
+    position: relative;
+    border-radius: 1rem 0 0 1rem;
+}
+
 .hero p {
     color: #ffffff;
     float: right;
-    margin-top: 300px;
-    margin-right: 20px;
-    padding: 20px;
     font-size: 30px;
+    position: absolute;
+    left: 2%;
 } 
 /*-----------------------------------------------------------------------------------------------------------------*/
 
@@ -97,6 +107,7 @@ h2 {
     color: var(--dark-text);
     font-size: 3rem;
     padding-left: 20px;
+    text-align: right;
 }
 
 p {
@@ -110,6 +121,11 @@ p {
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 
@@ -193,6 +209,7 @@ footer {
     color: (var(--text-color));
     display: flex;
     justify-content: space-between;
+    height: 80px;
 }
 
 footer nav {
@@ -203,7 +220,12 @@ footer nav {
 }
 
 footer h2 {
-    color: var(--text-color)
+    color: var(--text-color);
+    padding-top: 6px;
+}
+
+#footer-line {
+    border-left: 5px solid var(--text-color);
 }
 
 footer nav ul {
